@@ -1,0 +1,509 @@
+/* Font Imports (Using Google Fonts for reliability) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Raleway:wght@300;700&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Raleway', Helvetica, sans-serif;
+    font-weight: 300;
+    margin: 0;
+    color: #102946;
+    background-color: #f0f8ff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Section General */
+section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 150px 0 80px;
+    background-color: #f0f8ff;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hero-text h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: #1d2023;
+    margin: 0 0 25px;
+}
+
+.hero-text h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: #183149;
+    margin: 0 0 30px;
+}
+
+.hero-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #26c9ff;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1a9fd6;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Features Section */
+.features-section {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.section-title h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #1d2023;
+    margin: 0 0 20px;
+}
+
+.section-title h3, .section-title h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #183149;
+    margin: 0 0 40px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    justify-content: center;
+}
+
+.feature-item {
+    background-color: #f0f8ff;
+    border: 1px solid #d3d3d3;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.feature-item img {
+    max-width: 150px;
+    height: auto;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.feature-item h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #1d2023;
+    margin: 0 0 15px;
+}
+
+.feature-item p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #102946;
+}
+
+/* Advanced Techniques Section */
+.advanced-section {
+    background-color: #f0f8ff;
+    padding: 80px 0;
+}
+
+.advanced-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.advanced-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.advanced-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.advanced-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.advanced-text h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #26c9ff;
+    margin: 0 0 20px;
+}
+
+.advanced-text h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #183149;
+}
+
+/* Offerings Section */
+.offerings-section {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.offerings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    justify-content: center;
+}
+
+.offering-item {
+    background-color: #f0f8ff;
+    border: 1px solid #d3d3d3;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offering-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.offering-item img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 20px;
+    display: block;
+    border-radius: 8px;
+}
+
+.offering-item h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #fbc75e;
+    margin: 0 0 10px;
+}
+
+.offering-item h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #1d2023;
+    margin: 0 0 10px;
+}
+
+.offering-item h5 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: #102946;
+    margin: 0 0 15px;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 80px 0;
+    background-color: #f0f8ff;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Force 4 columns */
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.faq-item h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #1d2023;
+    margin: 0 0 15px;
+}
+
+.faq-item p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #102946;
+}
+
+/* Lottery Sections */
+.lottery-section, .lottery-details-section {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.lottery-list, .lottery-details-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.lottery-item, .lottery-details-item {
+    background-color: #f0f8ff;
+    border: 1px solid #d3d3d3;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lottery-item:hover, .lottery-details-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.lottery-item h4, .lottery-details-item h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #1d2023;
+    margin: 0 0 15px;
+    text-align: left;
+}
+
+.lottery-item ul, .lottery-details-item ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.lottery-item li, .lottery-details-item li {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #102946;
+    margin-bottom: 10px;
+}
+
+.lottery-detail-block {
+    background-color: #f0f8ff;
+    border: 1px solid #d3d3d3;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lottery-detail-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.lottery-detail-block h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.4rem;
+    color: #1d2023;
+    margin: 0 0 15px;
+    text-align: left;
+}
+
+.lottery-detail-block p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #102946;
+    margin: 0 0 15px;
+    text-align: left;
+}
+
+.cost-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.cost-list li {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #102946;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.cost-list li strong {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900; /* Increased to match or exceed h3 boldness */
+    font-size: 1.1rem; /* Slightly larger for emphasis */
+}
+
+/* Footer Section */
+.footer-section {
+    padding: 30px 0;
+    background-color: #f0f8ff;
+    border-top: 1px solid #d3d3d3;
+}
+
+.footer-section p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #102946;
+    margin: 0 0 10px;
+}
+
+.footer-section a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #26c9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #1a9fd6;
+}
+
+/* Responsive Design */
+@media (max-width: 960px) {
+    .faq-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+
+    .hero-content, .advanced-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .hero-text, .advanced-text {
+        text-align: center;
+    }
+
+    .features-grid, .offerings-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-section {
+        padding: 100px 0 60px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .hero-text h2, .section-title h2, .advanced-text h2 {
+        font-size: 2rem;
+    }
+
+    .hero-text h4, .section-title h3, .section-title h4, .advanced-text h4 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .faq-grid {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+
+    .hero-text h2, .section-title h2, .advanced-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .hero-text h4, .section-title h3, .section-title h4, .advanced-text h4 {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .feature-item, .offering-item, .faq-item, .lottery-item, .lottery-details-item, .lottery-detail-block {
+        padding: 20px;
+    }
+}
